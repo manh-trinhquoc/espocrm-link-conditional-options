@@ -1,0 +1,13 @@
+{
+    "module": "LinkConditionOptions",
+    "name": "Link Condition Options",
+    "description": "a custom link field that will filter the record base on value of other field.",
+    "author": "manhtq",
+    "bundled": false,
+    "acceptableVersions": [
+        ">=7.3.0"
+    ],
+    "php": [
+        ">=7.2"
+    ]
+}

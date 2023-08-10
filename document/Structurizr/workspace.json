@@ -1,0 +1,28 @@
+{
+  "id" : 1,
+  "name" : "Espo Plugin",
+  "description" : "Description",
+  "lastModifiedDate" : "2023-08-10T09:50:00Z",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJFc3BvIFBsdWdpbiIgewogICAgIWFkcnMgZGVjaXNpb25zCiAgICAhZG9jcyBkb2N1bWVudHMKICAgIG1vZGVsIHsKICAgICAgICAKICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgCgogICAgICAgIHRoZW1lIGRlZmF1bHQKCiAgICAgICAgLy8gdGhlbWVzIGh0dHBzOi8vc3RhdGljLnN0cnVjdHVyaXpyLmNvbS90aGVtZXMvbWljcm9zb2Z0LWF6dXJlLTIwMjEuMDEuMjYvdGhlbWUuanNvbgogICAgfQoKfQo="
+  },
+  "configuration" : { },
+  "model" : { },
+  "documentation" : {
+    "sections" : [ {
+      "content" : "## Overview\n\n- Xây dựng trường linkConditionalOptions có dạng giống trường link mặc định của Espo.\n- Kết quả record trả về sẽ được lọc dựa theo giá trị của 1 hoặc nhiều trường khác.\n- điều kiện so sánh có thể là bằng, khác, lớn, nhỏ, chứa, không chứa...\n\n## Mô tả người dùng tương tác\n\n- Người dùng admin tạo field linkConditionalOptions và set các điều kiện lọc theo các trường khác.\n- Admin sẽ phải chọn các cấu hình\n\n| option | description\n| --- | ---\n| attribute | tên trường lọc trong record hiện tại để lấy giá trị lọc\n| externalAttribute | tên trường trong entity link tới\n| type | điều kiện so sánh\n\n- người dùng có thể chọn nhiều trường làm điều kiện lọc. Giao diện bắt trước conditional options của trường enum\n\n\n## Tham khảo\n- coding rule: https://docs.espocrm.com/development/coding-rules/#11-use-dto-rather-than-associative-arrays-or-stdclass-objects",
+      "format" : "Markdown",
+      "filename" : "001 overview.md",
+      "order" : 1,
+      "title" : ""
+    } ]
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "styles" : { },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { }
+    }
+  }
+}
