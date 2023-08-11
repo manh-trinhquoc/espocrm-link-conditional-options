@@ -19,4 +19,6 @@
 
 
 ## Tham khảo
+- Dynamic handler: các option trong dynamic logic https://docs.espocrm.com/development/dynamic-handler/
+- nếu không đủ khả năng tạo dynamic handler, dùng tạm params trong metatada/fields https://docs.espocrm.com/development/metadata/fields/
 - coding rule: https://docs.espocrm.com/development/coding-rules/#11-use-dto-rather-than-associative-arrays-or-stdclass-objects
