@@ -1,6 +1,5 @@
 # Extension for EspoCrm
-- create a custom link field that will filter the record base on value of other field.
-- admin can set up filter field like conditional options in enum
+- create a custom link field that will filter the link record with field value equal to a field of current record.
 
 ## Workflow
 1. create sub branch, finish the feature and create merge request

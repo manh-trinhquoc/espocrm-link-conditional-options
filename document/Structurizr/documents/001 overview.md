@@ -1,22 +1,37 @@
 ## Overview
 
-- Xây dựng trường linkConditionalOptions có dạng giống trường link mặc định của Espo.
-- Kết quả record trả về sẽ được lọc dựa theo giá trị của 1 hoặc nhiều trường khác.
-- điều kiện so sánh có thể là bằng, khác, lớn, nhỏ, chứa, không chứa...
+- Kết quả record của trường link trả về sẽ được lọc dựa theo giá trị của 1 hoặc nhiều trường khác.
 
-## Mô tả người dùng tương tác
+TODO: v0.0.2
+- Xây dựng trường linkConditionalOptions riêng biệt, sử dụng trường này thay thế trường link cần áp dụng điều kiện lọc
+- Điều kiện lọc có thể được cấu hình qua admin giống như condition Option của trường enum
 
+
+## Triển khai
+- người dùng cấu hình sử dụng custom view cho field type loại link ` entityDefs/ENTITY.json `. Trong custom view sẽ can thiệp vào hàm sinh ra url query dữ liệu ở backend.
+```json 
+
+    "fields": {
+        "FIELD": {
+            "type": "link",
+            "view": "link-condition-options:views/fields/link-condition-options"
+        }
+    },
+
+```
+- người dùng override hàm ` getModelFilterObjects ` để áp dụng logic thực tế cần thiết
+
+TODO: v0.0.2
 - Người dùng admin tạo field linkConditionalOptions và set các điều kiện lọc theo các trường khác.
 - Admin sẽ phải chọn các cấu hình
 
 | option | description
 | --- | ---
-| attribute | tên trường lọc trong record hiện tại để lấy giá trị lọc
-| externalAttribute | tên trường trong entity link tới
-| type | điều kiện so sánh
+| originalLinkField | Trường link gốc mà trường này sẽ thay thế
+
+
 
 - người dùng có thể chọn nhiều trường làm điều kiện lọc. Giao diện bắt trước conditional options của trường enum
-
 
 ## Tham khảo
 - Dynamic handler: các option trong dynamic logic https://docs.espocrm.com/development/dynamic-handler/
